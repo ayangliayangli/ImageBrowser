@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="name     : " />
+
+	    <EditText android:id="@+id/name_insert_sqlite_detail"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	        android:hint="请输入用户名"
+	        />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="age    :    " />
+
+	    <EditText android:id="@+id/age_insert_sqlite_detail"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	        android:hint="请输入年龄"
+	        />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="score   :   " />
+
+	    <EditText android:id="@+id/score_insert_sqlite_detail"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	        android:hint="请输入综合分数"
+	        />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="婚姻状态:"
+	        />
+	    <EditText android:id="@+id/ismarray_insert_sqlite_detail"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	        android:hint="请输入婚姻状态"
+	        />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+	    <Button android:id="@+id/submit_insert_sqlite_detail"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="提交"
+	        />
+    </LinearLayout>
+
+</LinearLayout>

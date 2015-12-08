@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#f000f0"
+        android:text="something beautiful will come,baby!!!" />
+
+    
+    <LinearLayout 
+        android:gravity="center_horizontal"
+    		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	        <EditText android:id="@+id/editTextInTestEditText"
+	       	 android:layout_width="match_parent"
+	       	 android:layout_height="wrap_content"
+	       	 android:maxLines="2"
+	       	 android:hint="type something here"/>
+	        <Button
+	      	  android:id="@+id/buttonInTestEditText"
+	      	  android:gravity="center"
+	      	  android:layout_width="wrap_content"
+	       	  android:layout_height="wrap_content"
+	       	  android:text="GO" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/textViewInTestEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="39sp"
+        android:textColor="#00ff00"
+        android:text="something beautiful will come" />
+
+</LinearLayout>

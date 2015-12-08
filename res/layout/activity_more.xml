@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="more function      by leo"
+        />
+    <Button 
+        android:id="@+id/second_button_show_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的位置"
+        />
+    
+    <Button 
+        android:id="@+id/second_button_web_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浏览器"
+        />
+    
+    <Button 
+        android:id="@+id/second_button_net_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="net(获取网络数据并解析)"
+        />
+    
+    <Button 
+        android:id="@+id/second_button_notification_to_main_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="notification-to-main"
+        />
+    
+    <Button 
+        android:id="@+id/second_button_sms_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sms"
+        />
+    
+    <Button 
+        android:id="@+id/second_button_take_photo_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="take photo"
+        />
+    
+    <Button 
+        android:id="@+id/second_button_music_mediaplayer_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="music_mediaplayer"
+        />
+    
+    <Button 
+        android:id="@+id/second_button_service_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="service"
+        />
+    
+    <Button 
+        android:id="@+id/second_button_sensor_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指南针"
+        />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+	        <Button android:id="@+id/start_mediaplayer_button"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	        android:text="start"
+	        />
+	    
+	    <Button android:id="@+id/pause_mediaplayer_button"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0sp"
+	        android:layout_weight="2"
+	        android:text="pause"
+	        />
+	    
+	    <Button android:id="@+id/reset_mediaplayer_button"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0sp"
+	        android:layout_weight="1"
+	        android:text="reset"
+	        />
+        
+    </LinearLayout>
+    <TextView android:id="@+id/info_mediaplayer_music_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show information textview"
+        />
+    
+
+    
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+	    <LinearLayout 
+	        android:id="@+id/media_player_music_linearlayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+	    		
+	        <ImageView android:id="@+id/show_pictrue_music_mediaplayer_imageview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        />
+	        
+	        
+	        
+	    </LinearLayout>
+    </ScrollView>
+    
+    
+    		 <VideoView android:id="@+id/video_view"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        
+	        />
+    
+       
+    
+    
+
+</LinearLayout>

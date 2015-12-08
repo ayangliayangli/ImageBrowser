@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TableRow >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="name"
+            />
+        <EditText android:id="@+id/login_name"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="type u name"
+            />
+    </TableRow>
+    <TableRow >
+    		<TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="password"
+            />
+        <EditText android:id="@+id/login_passwd"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="type u password"
+            />
+    </TableRow>
+    <TableRow android:gravity="center_horizontal">
+        <Button android:id="@+id/login_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="OK-OK-OK"
+            />
+    </TableRow>
+    
+    
+     <TableRow >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="用户名（上次）"
+            />
+        <TextView android:id="@+id/login_name_last_time"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+    </TableRow>
+    <TableRow >
+    		<TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="密码（上次）"
+            />
+        <TextView android:id="@+id/login_passwd_last_time"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+    </TableRow>
+    
+</TableLayout>

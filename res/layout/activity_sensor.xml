@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView android:id="@+id/info_sensor_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is info dialog"
+        android:gravity="center"
+        />
+    <TextView android:id="@+id/info_sensor1_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is info dialog"
+        android:gravity="center"
+        />
+    <TextView android:id="@+id/info_sensor2_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is info dialog"
+        android:gravity="center"
+        />
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView android:id="@+id/compass_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/juan3"
+            android:layout_centerInParent="true"
+            />
+        
+        <ImageView android:id="@+id/arrow_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/yang6"
+            android:layout_centerInParent="true"
+            />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

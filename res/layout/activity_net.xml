@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+	        <EditText android:id="@+id/host_ip_edittext"
+	            android:layout_height="wrap_content"
+	            android:layout_width="0sp"
+	            android:layout_weight="1"
+	            android:hint="请输入服务器的IP地址"
+	            />
+	        <Button android:id="@+id/host_ip_submit_button"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="提交"
+	            />
+	        
+	    </LinearLayout>
+    <Button android:id="@+id/httpclient_button_baidu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="httpclient_BAIDU"/>
+    
+	    <Button android:id="@+id/httpclient_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="httpclient_xml"/>
+	    
+	    <Button android:id="@+id/http_url_connection_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="http_url_connection_xml"/>
+	    
+	    <Button android:id="@+id/http_client_json_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="http_client_json"/>
+	    
+	    <TextView android:id="@+id/net_info_small_textview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="小提示窗口"
+	        />
+	    
+	    <ScrollView 
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent">
+		    <TextView android:id="@+id/net_info_textview"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="this is info dialog"
+		        />
+	    </ScrollView>
+    
+
+</LinearLayout>

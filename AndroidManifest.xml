@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imagebrowser"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+ <!-- 这个是APP的名字 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"  
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:label="SecondActivity"
+            android:name="com.example.imagebrowser.SecondActivity">
+            <intent-filter >
+                <action android:name="com.example.imagebroser.my_action"/>
+                <!-- DEFAULT category一定要加，如果不加，无法匹配 -->
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.example.imagebroser.my_category"/>
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".ThirdActivity"
+            android:label="thirdactivity">
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 下面两个Ativity用于测试生命周期的，一个是normal模式（完全遮蔽） ，一个是Dialog模式（遮蔽一半） -->
+    		<activity android:name=".LifeCyleDialogActivity"
+    		    android:theme="@android:style/Theme.Dialog"></activity>
+    		<activity android:name=".LifeCyleNormalActivity"></activity>
+    		<!-- 注册 TestEditText，用于测试EditText-->
+    		<activity android:name=".TestEditTextActivity"></activity>
+    		<activity 
+    		    android:name="com.example.listview.FruitActivity"
+    		    android:label="fruitActivity"
+    		    ></activity>
+    		<activity 
+    		    android:name="com.example.msg.MsgActivity"
+    		    android:label="自己聊天"
+    		    ></activity>
+    		<activity android:name="com.example.loign.LoginActivity"></activity>
+   		<activity android:name="com.example.loign.LoginOKActivity"></activity>
+    		<activity android:name="com.example.SQLite.ActivitySQLiteMain"></activity>
+   		<activity android:name="com.example.SQLite.ActivityInsertSQLiteDetail"></activity>
+   		<activity android:name="com.exmaple.contentprovider.readContactsActivity" 
+   		    android:label="read contacts"></activity>
+   		<activity android:name="com.example.imagebrowser.MoreActivity"></activity>
+   		<activity android:name="com.example.location.ActivityShowMyLocation"></activity>
+   		<activity android:name="com.example.net.WebViewActivity"></activity>
+   		<activity android:name="com.example.net.NetActivity"></activity>
+   		<activity android:name="com.example.sms.SMSActivity"></activity>
+   		<activity android:name="com.example.media.TakePhotoActivity"></activity>
+   		<activity android:name="com.example.media.MediaPlayerMusicActivity"></activity>
+   		
+   		
+   		<service android:name="com.example.service.MyService"></service>
+   		<activity android:name="com.example.service.ControlMyServiceActivity"></activity>
+   		
+   		<activity android:name="com.example.sensor.SensorActivity"></activity>
+   		
+   		<provider 
+   		    android:name="com.example.SQLite.StudentsProvider"
+   		    android:authorities="com.example.imagebrowser.provider"
+   		    android:exported="true"
+   		    ></provider>
+   		
+   		
+   		
+   		
+   	</application>
+   		
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+   
+	
+	
+</manifest>

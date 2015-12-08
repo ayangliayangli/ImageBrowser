@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.imagebrowser.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item android:id="@+id/Item_hiddenIntent"
+        android:title="隐式Intent"/>
+    <item android:id="@+id/Item_openBroser"
+        android:title="打开百度"/>
+    <item android:id="@+id/Item_openLifeCyleNormal"
+        android:title="测试生命周期正常"/>
+    <item android:id="@+id/Item_openLifeCyleDialog"
+        android:title="测试生命周期对话框"/>
+    <item android:id="@+id/Item_testEditText"
+        android:title="测试editText"/>
+    <item android:id="@+id/Item_ProgressDialog"
+        android:title="Item_ProgressDialog"/>
+    <item android:id="@+id/Item_AlertDialog"
+        android:title="Item_AlertDialog"/>
+    <item android:id="@+id/Item_ListView"
+        android:title="Item_ListViewFruit"/>
+    <item android:id="@+id/Item_MsgListView"
+        android:title="自己聊天"/>
+    <item android:id="@+id/item_sendBoadcast"
+        android:title="sendBoradcast"/>
+    <item android:id="@+id/item_send_orderd_boadcast"
+        android:title="sendOrderdBoradcast"/>
+    <item android:id="@+id/item_sendLocalBoradcast"
+        android:title="sendLocalBroadcast"/>
+    <item android:id="@+id/item_login_activity"
+        android:title="login"/>
+    <item android:id="@+id/item_sqlite_main"
+        android:title="sqlite"/>
+    <item android:id="@+id/item_contentProvider_readContacts"
+        android:title="readContacts"/>
+    <item android:id="@+id/item_more_activity"
+        android:title="show more"/>
+
+</menu>
